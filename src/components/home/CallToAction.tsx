@@ -3,24 +3,27 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Phone, Mail } from "lucide-react";
 import { motion } from "framer-motion";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const CallToAction = () => {
+  const isMobile = useIsMobile();
+  
   return (
-    <section className="py-16 relative overflow-hidden">
+    <section className="py-16 md:py-20 relative overflow-hidden my-8">
       {/* Background with overlay */}
       <div className="absolute inset-0 bg-taxi-black/80 z-10"></div>
       <div 
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1588979355313-6711a095465f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1611465214630-d79b507b1a1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80')",
           filter: "brightness(0.4) blur(2px)"
         }}
       ></div>
       
-      <div className="taxi-container relative z-20">
+      <div className="taxi-container relative z-20 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto text-center">
           <motion.h2 
-            className="text-3xl md:text-4xl font-bold text-white mb-6"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -30,7 +33,7 @@ const CallToAction = () => {
           </motion.h2>
           
           <motion.p 
-            className="text-xl text-gray-300 mb-10"
+            className="text-lg sm:text-xl text-gray-300 mb-8 md:mb-10 px-2"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -50,14 +53,14 @@ const CallToAction = () => {
               href="tel:0601020304" 
               className="btn-primary flex items-center justify-center gap-2 w-full md:w-auto"
             >
-              <Phone size={18} />
+              <Phone size={isMobile ? 16 : 18} />
               <span>Appeler maintenant</span>
             </a>
             <Link 
               to="/contact" 
               className="btn-outline border-white text-white hover:bg-white/20 flex items-center justify-center gap-2 w-full md:w-auto"
             >
-              <Mail size={18} />
+              <Mail size={isMobile ? 16 : 18} />
               <span>Nous contacter</span>
             </Link>
           </motion.div>

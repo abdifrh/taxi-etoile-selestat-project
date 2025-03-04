@@ -30,7 +30,7 @@ const testimonials = [
 const TestimonialCard = ({ testimonial, index }: { testimonial: typeof testimonials[0], index: number }) => {
   return (
     <motion.div 
-      className="taxi-card-highlight"
+      className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -39,23 +39,23 @@ const TestimonialCard = ({ testimonial, index }: { testimonial: typeof testimoni
       {/* Stars */}
       <div className="flex mb-4">
         {[...Array(testimonial.stars)].map((_, i) => (
-          <Star key={i} size={18} className="fill-taxi-yellow text-taxi-yellow" />
+          <Star key={i} size={16} className="fill-taxi-yellow text-taxi-yellow mr-1" />
         ))}
       </div>
       
       {/* Testimonial */}
-      <p className="text-gray-700 mb-6 italic">"{testimonial.text}"</p>
+      <p className="text-gray-700 mb-6 italic text-sm sm:text-base">"{testimonial.text}"</p>
       
       {/* Person */}
       <div className="flex items-center">
         <img 
           src={testimonial.image} 
           alt={testimonial.name} 
-          className="w-12 h-12 rounded-full mr-4 object-cover"
+          className="w-10 h-10 sm:w-12 sm:h-12 rounded-full mr-4 object-cover"
         />
         <div>
-          <h4 className="font-semibold text-taxi-black">{testimonial.name}</h4>
-          <p className="text-sm text-taxi-gray-dark">{testimonial.role}</p>
+          <h4 className="font-semibold text-taxi-black text-sm sm:text-base">{testimonial.name}</h4>
+          <p className="text-xs sm:text-sm text-taxi-gray-dark">{testimonial.role}</p>
         </div>
       </div>
     </motion.div>
@@ -64,11 +64,11 @@ const TestimonialCard = ({ testimonial, index }: { testimonial: typeof testimoni
 
 const Testimonials = () => {
   return (
-    <section className="taxi-section bg-gray-50">
-      <div className="taxi-container">
-        <div className="text-center mb-16">
+    <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
+      <div className="taxi-container px-4 sm:px-6">
+        <div className="text-center mb-10 md:mb-16">
           <motion.span 
-            className="inline-block bg-taxi-yellow-light text-taxi-black px-4 py-1 rounded-full mb-4 font-medium"
+            className="inline-block bg-taxi-yellow-light text-taxi-black px-3 py-1 rounded-full mb-3 sm:mb-4 font-medium text-sm"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -77,7 +77,7 @@ const Testimonials = () => {
             Témoignages clients
           </motion.span>
           <motion.h2 
-            className="section-title"
+            className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 text-taxi-black"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -86,7 +86,7 @@ const Testimonials = () => {
             Ce que nos clients disent de nous
           </motion.h2>
           <motion.p 
-            className="section-subtitle"
+            className="text-lg text-taxi-gray-dark max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -96,7 +96,7 @@ const Testimonials = () => {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard key={index} testimonial={testimonial} index={index} />
           ))}

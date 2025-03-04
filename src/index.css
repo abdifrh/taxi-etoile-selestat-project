@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -34,28 +33,6 @@
     --ring: 47.9 95.8% 53.1%;
     --radius: 0.5rem;
   }
-
-  .dark {
-    --background: 20 14.3% 4.1%;
-    --foreground: 60 9.1% 97.8%;
-    --primary: 47.9 95.8% 53.1%;
-    --primary-foreground: 26 83.3% 4.1%;
-    --secondary: 12 6.5% 15.1%;
-    --secondary-foreground: 60 9.1% 97.8%;
-    --accent: 12 6.5% 15.1%;
-    --accent-foreground: 60 9.1% 97.8%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 60 9.1% 97.8%;
-    --card: 12 6.5% 7.1%;
-    --card-foreground: 60 9.1% 97.8%;
-    --popover: 12 6.5% 7.1%;
-    --popover-foreground: 60 9.1% 97.8%;
-    --muted: 12 6.5% 15.1%;
-    --muted-foreground: 24 5.4% 63.9%;
-    --border: 12 6.5% 15.1%;
-    --input: 12 6.5% 15.1%;
-    --ring: 35.5 91.7% 32.9%;
-  }
 }
 
 @layer base {
@@ -74,11 +51,35 @@
   }
   
   .btn-primary {
-    @apply bg-taxi-yellow hover:bg-taxi-yellow-light text-taxi-black font-medium px-6 py-3 rounded-md transition-colors duration-300 hover:shadow-md;
+    @apply bg-taxi-yellow hover:bg-taxi-yellow-light text-taxi-black font-medium px-4 sm:px-6 py-2 sm:py-3 rounded-md transition-colors duration-300 hover:shadow-md text-sm sm:text-base;
   }
   
   .btn-outline {
-    @apply border-2 px-6 py-3 rounded-md transition-colors duration-300 font-medium;
+    @apply border-2 px-4 sm:px-6 py-2 sm:py-3 rounded-md transition-colors duration-300 font-medium text-sm sm:text-base;
+  }
+
+  .taxi-section {
+    @apply py-10 sm:py-12 md:py-16 lg:py-20;
+  }
+
+  .section-title {
+    @apply text-2xl sm:text-3xl md:text-4xl font-bold text-taxi-black mb-3 sm:mb-4;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-taxi-gray-dark max-w-2xl mx-auto;
+  }
+
+  .taxi-card {
+    @apply bg-white p-5 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300;
+  }
+
+  .taxi-card-highlight {
+    @apply bg-white p-5 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-taxi-yellow;
+  }
+
+  .taxi-icon-container {
+    @apply bg-taxi-yellow/10 p-3 rounded-full inline-block mb-4 text-taxi-black;
   }
 }
 
@@ -88,6 +89,18 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
+}
+
+/* Spacing global pour améliorer l'aspect mobile */
+section {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+  .taxi-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 /* Ajout des polices Google Fonts */
