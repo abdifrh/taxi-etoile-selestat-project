@@ -61,7 +61,7 @@ const Features = () => {
             className="rounded-lg overflow-hidden shadow-xl"
           >
             <img 
-              src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" 
+              src="https://images.unsplash.com/photo-1540567736792-f78f6242e4e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" 
               alt="Taxi service in Saverne" 
               className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
               style={{ minHeight: "400px" }}
