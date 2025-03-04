@@ -15,7 +15,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1534787238916-9ba6764efd4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1591805058622-386830c22ba7?q=80&w=1400&auto=format&fit=crop')",
           filter: "brightness(0.6)"
         }}
       ></div>
@@ -76,7 +76,7 @@ const Hero = () => {
       </div>
       
       {/* Decorative element */}
-      <div className="absolute bottom-0 left-0 w-full h-12 sm:h-16 bg-gradient-to-t from-white to-transparent z-10"></div>
+      <div className="absolute bottom-0 left-0 w-full h-12 sm:h-16 bg-gradient-to-t from-white dark:from-black to-transparent z-10"></div>
     </section>
   );
 };
