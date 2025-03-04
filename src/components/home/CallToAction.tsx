@@ -12,7 +12,7 @@ const CallToAction = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1562888333-91065ab4bbc8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80')",
           filter: "brightness(0.4) blur(2px)"
         }}
       ></div>
