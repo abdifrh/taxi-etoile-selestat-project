@@ -91,7 +91,7 @@ const Navbar = () => {
               <img 
                 src="/lovable-uploads/3faf51f3-d98f-48b5-b3b9-6c1699b47d22.png" 
                 alt="Taxi Etoile Sélestat" 
-                className="h-10 md:h-12" 
+                className="h-14 md:h-16" 
               />
             </NavLink>
           </motion.div>

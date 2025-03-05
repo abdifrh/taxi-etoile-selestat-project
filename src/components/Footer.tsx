@@ -14,9 +14,9 @@ const Footer = () => {
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2 mb-4">
               <img 
-                src="/lovable-uploads/3faf51f3-d98f-48b5-b3b9-6c1699b47d22.png" 
+                src="/lovable-uploads/c0bec97d-9b39-4a89-92e7-b58ab1242cd4.png" 
                 alt="Taxi Etoile Sélestat" 
-                className="h-10" 
+                className="h-14" 
               />
             </Link>
             <p className="text-gray-300 text-sm">
