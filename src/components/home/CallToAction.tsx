@@ -15,7 +15,7 @@ const CallToAction = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{ 
-          backgroundImage: "url('img/taxi-night.jpg')",
+          backgroundImage: "url('img/cta-img.jpg')",
           filter: "brightness(0.4) blur(2px)"
         }}
       ></div>
