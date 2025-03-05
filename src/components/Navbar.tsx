@@ -87,9 +87,12 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="flex items-center"
           >
-            <NavLink to="/" className="text-xl md:text-2xl font-bold text-taxi-black flex items-center gap-2">
-              <span className="bg-taxi-yellow text-taxi-black px-2 py-1 rounded">TAXI</span>
-              <span>Sélestat</span>
+            <NavLink to="/" className="flex items-center">
+              <img 
+                src="/lovable-uploads/3faf51f3-d98f-48b5-b3b9-6c1699b47d22.png" 
+                alt="Taxi Etoile Sélestat" 
+                className="h-10 md:h-12" 
+              />
             </NavLink>
           </motion.div>
 
@@ -116,8 +119,8 @@ const Navbar = () => {
                       ${isActive 
                         ? "text-taxi-black after:w-full" 
                         : isScrolled 
-                          ? "text-taxi-gray-dark hover:text-taxi-black after:w-0 hover:after:w-full"
-                          : "text-taxi-black hover:text-taxi-black after:w-0 hover:after:w-full"}`
+                          ? "text-taxi-gray-dark hover:text-taxi-yellow after:w-0 hover:after:w-full"
+                          : "text-taxi-black hover:text-taxi-yellow after:w-0 hover:after:w-full"}`
                     }
                   >
                     {item.name}
@@ -176,7 +179,7 @@ const Navbar = () => {
                         `block px-4 py-2 rounded-md transition-colors ${
                           isActive
                             ? "bg-taxi-yellow-light text-taxi-black font-medium"
-                            : "text-taxi-gray-dark hover:bg-taxi-gray-light"
+                            : "text-taxi-gray-dark hover:text-taxi-yellow"
                         }`
                       }
                     >

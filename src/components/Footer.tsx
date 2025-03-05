@@ -13,8 +13,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <span className="bg-taxi-yellow text-taxi-black px-2 py-1 rounded font-bold text-xl">TAXI</span>
-              <span className="font-bold text-xl">Sélestat</span>
+              <img 
+                src="/lovable-uploads/3faf51f3-d98f-48b5-b3b9-6c1699b47d22.png" 
+                alt="Taxi Etoile Sélestat" 
+                className="h-10" 
+              />
             </Link>
             <p className="text-gray-300 text-sm">
               Votre service de taxi de confiance à Sélestat et ses environs. Transport professionnel, ponctuel et sécurisé pour tous vos déplacements.
@@ -128,7 +131,7 @@ const Footer = () => {
         <hr className="border-gray-800 my-6" />
         
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>© {currentYear} Taxi Sélestat. Tous droits réservés.</p>
+          <p>© {currentYear} Taxi Etoile Sélestat. Tous droits réservés.</p>
           <div className="mt-4 md:mt-0 space-x-4">
             <Link to="/privacy" className="hover:text-white transition-colors">Politique de confidentialité</Link>
             <Link to="/terms" className="hover:text-white transition-colors">Mentions légales</Link>
