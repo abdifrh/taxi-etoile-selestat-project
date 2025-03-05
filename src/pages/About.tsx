@@ -63,7 +63,7 @@ const About = () => {
               viewport={{ once: true, margin: "-100px" }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" 
+                src="/img/img-about.jpg" 
                 alt="Taxi driver in Saverne" 
                 className="rounded-lg shadow-xl w-full h-auto"
               />
