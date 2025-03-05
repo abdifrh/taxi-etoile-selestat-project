@@ -29,7 +29,7 @@ const CallToAction = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            Besoin d'un taxi à Saverne ?
+            Besoin d'un taxi à Sélestat ?
           </motion.h2>
           
           <motion.p 

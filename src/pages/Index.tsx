@@ -10,7 +10,7 @@ import CallToAction from "@/components/home/CallToAction";
 const Index = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "Taxi Saverne - Votre taxi de confiance à Saverne et ses environs";
+    document.title = "Taxi Sélestat - Votre taxi de confiance à Sélestat et ses environs";
   }, []);
 
   return (

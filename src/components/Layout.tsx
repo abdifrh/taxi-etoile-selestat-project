@@ -40,7 +40,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <div className={`flex flex-col min-h-screen w-full overflow-x-hidden ${theme}`}>
       <Navbar />
       <motion.main 
-        className="flex-grow dark:bg-gray-900 transition-colors duration-300"
+        className="flex-grow transition-colors duration-300"
         initial="initial"
         animate="animate"
         exit="exit"

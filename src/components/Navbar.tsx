@@ -1,10 +1,9 @@
 
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import { Phone, Menu, X, Moon, Sun } from "lucide-react";
+import { Phone, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { useTheme } from "@/hooks/use-theme";
 
 const navItems = [
   { name: "Accueil", path: "/" },
@@ -19,7 +18,6 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const isMobile = useIsMobile();
-  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,13 +37,9 @@ const Navbar = () => {
 
   const navbarClass = `fixed top-0 w-full z-50 transition-all duration-300 ${
     isScrolled
-      ? "backdrop-blur-md bg-white/60 dark:bg-black/60 shadow-md py-2"
-      : "backdrop-blur-sm bg-white/20 dark:bg-black/20 py-4"
+      ? "backdrop-blur-md bg-white/60 shadow-md py-2"
+      : "backdrop-blur-sm bg-white/20 py-4"
   }`;
-
-  const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
 
   const menuItemVariants = {
     hidden: { opacity: 0, y: -10 },
@@ -93,9 +87,9 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="flex items-center"
           >
-            <NavLink to="/" className="text-xl md:text-2xl font-bold text-taxi-black dark:text-white flex items-center gap-2">
+            <NavLink to="/" className="text-xl md:text-2xl font-bold text-taxi-black flex items-center gap-2">
               <span className="bg-taxi-yellow text-taxi-black px-2 py-1 rounded">TAXI</span>
-              <span className="dark:text-white">Saverne</span>
+              <span>Sélestat</span>
             </NavLink>
           </motion.div>
 
@@ -120,8 +114,8 @@ const Navbar = () => {
                     className={({ isActive }) =>
                       `font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-taxi-yellow after:transition-all after:duration-300 
                       ${isActive 
-                        ? "text-taxi-black dark:text-white after:w-full" 
-                        : "text-taxi-gray-dark dark:text-gray-300 hover:text-taxi-black dark:hover:text-white after:w-0 hover:after:w-full"}`
+                        ? "text-taxi-black after:w-full" 
+                        : "text-taxi-gray-dark hover:text-taxi-black after:w-0 hover:after:w-full"}`
                     }
                   >
                     {item.name}
@@ -131,7 +125,7 @@ const Navbar = () => {
             </motion.div>
           )}
 
-          {/* Phone number, theme toggle and mobile menu toggle */}
+          {/* Phone number and mobile menu toggle */}
           <div className="flex items-center space-x-4">
             <motion.a
               href="tel:0601020304"
@@ -143,25 +137,13 @@ const Navbar = () => {
               <Phone size={18} />
               <span className="hidden sm:inline">06 01 02 03 04</span>
             </motion.a>
-            
-            {/* Theme toggle button */}
-            <motion.button
-              onClick={toggleTheme}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.4, delay: 0.35 }}
-              className="p-2 rounded-full bg-white/20 dark:bg-black/20 hover:bg-white/30 dark:hover:bg-black/30 text-taxi-black dark:text-white transition-all"
-              aria-label={theme === 'dark' ? 'Passer au mode clair' : 'Passer au mode sombre'}
-            >
-              {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
-            </motion.button>
 
             {/* Mobile menu toggle */}
             {isMobile && (
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
-                className="block md:hidden p-2 text-taxi-black dark:text-white focus:outline-none"
+                className="block md:hidden p-2 text-taxi-black focus:outline-none"
               >
                 {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
@@ -179,7 +161,7 @@ const Navbar = () => {
               variants={mobileMenuVariants}
               className="md:hidden mt-4 pb-4 overflow-hidden"
             >
-              <div className="flex flex-col space-y-3 bg-white/90 dark:bg-black/90 backdrop-blur-md rounded-lg p-4 shadow-lg">
+              <div className="flex flex-col space-y-3 bg-white/90 backdrop-blur-md rounded-lg p-4 shadow-lg">
                 {navItems.map((item, i) => (
                   <motion.div 
                     key={item.path}
@@ -192,7 +174,7 @@ const Navbar = () => {
                         `block px-4 py-2 rounded-md transition-colors ${
                           isActive
                             ? "bg-taxi-yellow-light text-taxi-black font-medium"
-                            : "text-taxi-gray-dark dark:text-gray-300 hover:bg-taxi-gray-light dark:hover:bg-gray-800"
+                            : "text-taxi-gray-dark hover:bg-taxi-gray-light"
                         }`
                       }
                     >

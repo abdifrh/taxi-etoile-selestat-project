@@ -39,7 +39,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            Votre taxi de confiance à Saverne et ses environs !
+            Votre taxi de confiance à Sélestat et ses environs !
           </motion.h1>
           
           <motion.p 
@@ -76,7 +76,7 @@ const Hero = () => {
       </div>
       
       {/* Decorative element */}
-      <div className="absolute bottom-0 left-0 w-full h-12 sm:h-16 bg-gradient-to-t from-white dark:from-black to-transparent z-10"></div>
+      <div className="absolute bottom-0 left-0 w-full h-12 sm:h-16 bg-gradient-to-t from-white to-transparent z-10"></div>
     </section>
   );
 };

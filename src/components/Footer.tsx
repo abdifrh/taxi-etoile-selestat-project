@@ -14,10 +14,10 @@ const Footer = () => {
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2 mb-4">
               <span className="bg-taxi-yellow text-taxi-black px-2 py-1 rounded font-bold text-xl">TAXI</span>
-              <span className="font-bold text-xl">Saverne</span>
+              <span className="font-bold text-xl">Sélestat</span>
             </Link>
             <p className="text-gray-300 text-sm">
-              Votre service de taxi de confiance à Saverne et ses environs. Transport professionnel, ponctuel et sécurisé pour tous vos déplacements.
+              Votre service de taxi de confiance à Sélestat et ses environs. Transport professionnel, ponctuel et sécurisé pour tous vos déplacements.
             </p>
             <div className="flex space-x-4 pt-2">
               <a 
@@ -106,16 +106,16 @@ const Footer = () => {
                 <Mail size={18} className="mr-3 text-taxi-yellow flex-shrink-0 mt-1" />
                 <div>
                   <a 
-                    href="mailto:contact@taxi-saverne.fr" 
+                    href="mailto:contact@taxi-selestat.fr" 
                     className="text-white hover:text-taxi-yellow transition-colors"
                   >
-                    contact@taxi-saverne.fr
+                    contact@taxi-selestat.fr
                   </a>
                 </div>
               </li>
               <li className="flex items-start">
                 <MapPin size={18} className="mr-3 text-taxi-yellow flex-shrink-0 mt-1" />
-                <span className="text-gray-300">Saverne, Bas-Rhin (67700)</span>
+                <span className="text-gray-300">Sélestat, Bas-Rhin (67600)</span>
               </li>
               <li className="flex items-start">
                 <Clock size={18} className="mr-3 text-taxi-yellow flex-shrink-0 mt-1" />
@@ -128,7 +128,7 @@ const Footer = () => {
         <hr className="border-gray-800 my-6" />
         
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>© {currentYear} Taxi Saverne. Tous droits réservés.</p>
+          <p>© {currentYear} Taxi Sélestat. Tous droits réservés.</p>
           <div className="mt-4 md:mt-0 space-x-4">
             <Link to="/privacy" className="hover:text-white transition-colors">Politique de confidentialité</Link>
             <Link to="/terms" className="hover:text-white transition-colors">Mentions légales</Link>
