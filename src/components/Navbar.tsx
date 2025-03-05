@@ -115,7 +115,9 @@ const Navbar = () => {
                       `font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-taxi-yellow after:transition-all after:duration-300 
                       ${isActive 
                         ? "text-taxi-black after:w-full" 
-                        : "text-taxi-gray-dark hover:text-taxi-black after:w-0 hover:after:w-full"}`
+                        : isScrolled 
+                          ? "text-taxi-gray-dark hover:text-taxi-black after:w-0 hover:after:w-full"
+                          : "text-taxi-black hover:text-taxi-black after:w-0 hover:after:w-full"}`
                     }
                   >
                     {item.name}
