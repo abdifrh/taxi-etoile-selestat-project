@@ -9,13 +9,13 @@ const CallToAction = () => {
   const isMobile = useIsMobile();
   
   return (
-    <section className="py-16 md:py-20 relative overflow-hidden my-8">
+    <section className="py-16 md:py-20 relative overflow-hidden">
       {/* Background with overlay */}
       <div className="absolute inset-0 bg-taxi-black/80 z-10"></div>
       <div 
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1590513977333-eaa50a3abd13?q=80&w=1400&auto=format&fit=crop')",
+          backgroundImage: "url('img/taxi-night.jpg')",
           filter: "brightness(0.4) blur(2px)"
         }}
       ></div>
