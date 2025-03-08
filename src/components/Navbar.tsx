@@ -115,12 +115,10 @@ const Navbar = () => {
                   <NavLink
                     to={item.path}
                     className={({ isActive }) =>
-                      `font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-taxi-yellow after:transition-all after:duration-300 
+                      `font-medium relative text-taxi-yellow after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-taxi-yellow after:transition-all after:duration-300 
                       ${isActive 
-                        ? "text-taxi-black after:w-full" 
-                        : isScrolled 
-                          ? "text-taxi-gray-dark hover:text-taxi-yellow after:w-0 hover:after:w-full"
-                          : "text-taxi-black hover:text-taxi-yellow after:w-0 hover:after:w-full"}`
+                        ? "after:w-full" 
+                        : "after:w-0 hover:after:w-full"}`
                     }
                   >
                     {item.name}
@@ -176,10 +174,10 @@ const Navbar = () => {
                     <NavLink
                       to={item.path}
                       className={({ isActive }) =>
-                        `block px-4 py-2 rounded-md transition-colors ${
+                        `block px-4 py-2 rounded-md transition-colors text-taxi-yellow relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-taxi-yellow after:transition-all after:duration-300 ${
                           isActive
-                            ? "bg-taxi-yellow-light text-taxi-black font-medium"
-                            : "text-taxi-gray-dark hover:text-taxi-yellow"
+                            ? "after:w-full font-medium"
+                            : "after:w-0 hover:after:w-full"
                         }`
                       }
                     >
