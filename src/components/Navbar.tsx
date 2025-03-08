@@ -88,11 +88,19 @@ const Navbar = () => {
             className="flex items-center"
           >
             <NavLink to="/" className="flex items-center">
-              <img 
-                src="/lovable-uploads/3faf51f3-d98f-48b5-b3b9-6c1699b47d22.png" 
-                alt="Taxi Etoile Sélestat" 
-                className="h-14 md:h-16" 
-              />
+              {isScrolled ? (
+                <img 
+                  src="/lovable-uploads/3faf51f3-d98f-48b5-b3b9-6c1699b47d22.png" 
+                  alt="Taxi Etoile Sélestat" 
+                  className="h-14 md:h-16" 
+                />
+              ) : (
+                <img 
+                  src="/lovable-uploads/280a8001-74e7-4fd2-ab25-07dc0c29f661.png" 
+                  alt="Taxi Etoile Sélestat" 
+                  className="h-14 md:h-16" 
+                />
+              )}
             </NavLink>
           </motion.div>
 
