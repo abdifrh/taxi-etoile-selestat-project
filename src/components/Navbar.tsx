@@ -137,7 +137,7 @@ const Navbar = () => {
               transition={{ duration: 0.4, delay: 0.3 }}
               className="bg-taxi-yellow text-taxi-black px-3 py-2 rounded-md flex items-center gap-2 font-medium shadow-sm hover:bg-taxi-yellow-light transition-all duration-300 hover:shadow-md"
             >
-              <Phone size={18} />
+              <Phone size={isMobile ? 16 : 18} />
               <span className="hidden sm:inline">06 01 02 03 04</span>
             </motion.a>
 
@@ -174,7 +174,7 @@ const Navbar = () => {
                     <NavLink
                       to={item.path}
                       className={({ isActive }) =>
-                        `block px-4 py-2 rounded-md transition-colors ${isScrolled ? 'text-taxi-black hover:text-taxi-yellow' : 'text-taxi-yellow'} relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-taxi-yellow after:transition-all after:duration-300 ${
+                        `block px-4 py-2 rounded-md transition-colors text-taxi-black hover:text-taxi-yellow relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-taxi-yellow after:transition-all after:duration-300 ${
                           isActive
                             ? "after:w-full font-medium"
                             : "after:w-0 hover:after:w-full"
