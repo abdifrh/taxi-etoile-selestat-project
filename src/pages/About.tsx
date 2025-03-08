@@ -37,15 +37,6 @@ const About = () => {
     <Layout>
       {/* Header */}
       <section className="pt-32 pb-16 bg-gray-50">
-                {/* Background with overlay */}
-       <div className="absolute inset-0 bg-black/60 z-10"></div>
-        <div 
-          className="absolute inset-0 bg-cover bg-center z-0"
-          style={{ 
-            backgroundImage: "url('/img/contact-img.jpg')",
-            filter: "brightness(0.6)"
-          }}
-        ></div>
         <div className="taxi-container">
           <motion.div 
             className="max-w-3xl mx-auto text-center"
