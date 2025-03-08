@@ -115,7 +115,7 @@ const Navbar = () => {
                   <NavLink
                     to={item.path}
                     className={({ isActive }) =>
-                      `font-medium relative text-taxi-yellow after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-taxi-yellow after:transition-all after:duration-300 
+                      `font-medium relative ${isScrolled ? 'text-taxi-black hover:text-taxi-yellow' : 'text-taxi-yellow'} after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-taxi-yellow after:transition-all after:duration-300 
                       ${isActive 
                         ? "after:w-full" 
                         : "after:w-0 hover:after:w-full"}`
@@ -174,7 +174,7 @@ const Navbar = () => {
                     <NavLink
                       to={item.path}
                       className={({ isActive }) =>
-                        `block px-4 py-2 rounded-md transition-colors text-taxi-yellow relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-taxi-yellow after:transition-all after:duration-300 ${
+                        `block px-4 py-2 rounded-md transition-colors ${isScrolled ? 'text-taxi-black hover:text-taxi-yellow' : 'text-taxi-yellow'} relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-taxi-yellow after:transition-all after:duration-300 ${
                           isActive
                             ? "after:w-full font-medium"
                             : "after:w-0 hover:after:w-full"

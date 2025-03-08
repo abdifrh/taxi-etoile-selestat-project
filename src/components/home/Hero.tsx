@@ -74,9 +74,6 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-      
-      {/* Decorative element */}
-      <div className="absolute bottom-0 left-0 w-full h-12 sm:h-16 bg-gradient-to-t from-white to-transparent z-10"></div>
     </section>
   );
 };
