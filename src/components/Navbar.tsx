@@ -38,7 +38,7 @@ const Navbar = () => {
   const navbarClass = `fixed top-0 w-full z-50 transition-all duration-300 ${
     isScrolled
       ? "backdrop-blur-md bg-white/60 shadow-md py-2"
-      : "backdrop-blur-sm bg-white/20 py-4"
+      : "py-4"
   }`;
 
   const menuItemVariants = {
