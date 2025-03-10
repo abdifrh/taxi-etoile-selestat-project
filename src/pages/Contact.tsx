@@ -153,7 +153,13 @@ const Contact = () => {
                       href="tel:0601020304" 
                       className="text-lg font-medium text-taxi-black hover:text-taxi-yellow-dark transition-colors mt-1 block"
                     >
-                      06 01 02 03 04
+                      +33 7 45 11 10 18
+                    </a>
+                    <a 
+                      href="tel:0951156560" 
+                      className="text-lg font-medium text-taxi-black hover:text-taxi-yellow-dark transition-colors mt-1 block"
+                    >
+                      +33 9 51 15 65 60
                     </a>
                   </div>
                 </div>
@@ -166,10 +172,10 @@ const Contact = () => {
                     <h3 className="font-bold text-taxi-black">Email</h3>
                     <p className="text-taxi-gray-dark">Réponse sous 24h</p>
                     <a 
-                      href="mailto:contact@taxi-saverne.fr" 
+                      href="mailto:contact@taxietoile.com" 
                       className="text-lg font-medium text-taxi-black hover:text-taxi-yellow-dark transition-colors mt-1 block"
                     >
-                      contact@taxi-saverne.fr
+                      contact@taxietoile.com
                     </a>
                   </div>
                 </div>
@@ -180,9 +186,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-taxi-black">Zone de service</h3>
-                    <p className="text-taxi-gray-dark">Saverne et ses environs</p>
+                    <p className="text-taxi-gray-dark">Sélestat et ses environs</p>
                     <p className="text-lg font-medium text-taxi-black mt-1">
-                      Bas-Rhin (67700)
+                      Bas-Rhin (67600)
                     </p>
                   </div>
                 </div>

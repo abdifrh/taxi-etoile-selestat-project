@@ -98,10 +98,10 @@ const Footer = () => {
                 <Phone size={18} className="mr-3 text-taxi-yellow flex-shrink-0 mt-1" />
                 <div>
                   <a 
-                    href="tel:0601020304" 
+                    href="tel:0745111018" 
                     className="text-white hover:text-taxi-yellow transition-colors"
                   >
-                    06 01 02 03 04
+                    07 45 11 10 18
                   </a>
                 </div>
               </li>
@@ -109,10 +109,10 @@ const Footer = () => {
                 <Mail size={18} className="mr-3 text-taxi-yellow flex-shrink-0 mt-1" />
                 <div>
                   <a 
-                    href="mailto:contact@taxi-selestat.fr" 
+                    href="mailto:contact@taxietoile.com" 
                     className="text-white hover:text-taxi-yellow transition-colors"
                   >
-                    contact@taxi-selestat.fr
+                    contact@taxietoile.com
                   </a>
                 </div>
               </li>
@@ -132,6 +132,7 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <p>© {currentYear} Taxi Etoile Sélestat. Tous droits réservés.</p>
+          <p>Site développé par <a href="https://afh-agency.com/">AFH Agency</a></p>
           <div className="mt-4 md:mt-0 space-x-4">
             <Link to="/privacy" className="hover:text-white transition-colors">Politique de confidentialité</Link>
             <Link to="/terms" className="hover:text-white transition-colors">Mentions légales</Link>

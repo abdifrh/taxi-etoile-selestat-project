@@ -139,14 +139,14 @@ const Navbar = () => {
           {/* Phone number and mobile menu toggle */}
           <div className="flex items-center space-x-4">
             <motion.a
-              href="tel:0601020304"
+              href="tel:0745111018"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.4, delay: 0.3 }}
               className="bg-taxi-yellow text-taxi-black px-3 py-2 rounded-md flex items-center gap-2 font-medium shadow-sm hover:bg-taxi-yellow-light transition-all duration-300 hover:shadow-md"
             >
               <Phone size={isMobile ? 16 : 18} />
-              <span className="hidden sm:inline">06 01 02 03 04</span>
+              <span className="hidden sm:inline">07 45 11 10 18</span>
             </motion.a>
 
             {/* Mobile menu toggle */}
