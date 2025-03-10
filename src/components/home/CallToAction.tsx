@@ -50,7 +50,7 @@ const CallToAction = () => {
             viewport={{ once: true, margin: "-100px" }}
           >
             <a 
-              href="tel:0601020304" 
+              href="tel:+33745111018" 
               className="btn-primary flex items-center justify-center gap-2 w-full md:w-auto"
             >
               <Phone size={isMobile ? 16 : 18} />

@@ -132,7 +132,16 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <p>© {currentYear} Taxi Etoile Sélestat. Tous droits réservés.</p>
-          <p>Site développé par <a href="https://afh-agency.com/">AFH Agency</a></p>
+          <p className="mt-1 text-sm">
+              Site développé par <a 
+                href="https://afh-agency.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                AFH Agency
+              </a>
+          </p>
           <div className="mt-4 md:mt-0 space-x-4">
             <Link to="/privacy" className="hover:text-white transition-colors">Politique de confidentialité</Link>
             <Link to="/terms" className="hover:text-white transition-colors">Mentions légales</Link>

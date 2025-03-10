@@ -58,11 +58,11 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.6 }}
           >
             <a 
-              href="tel:0601020304" 
+              href="tel:+33754111018" 
               className="btn-primary flex items-center justify-center gap-2 w-full sm:w-auto"
             >
               <Phone size={isMobile ? 16 : 18} />
-              <span>06 01 02 03 04</span>
+              <span>07 45 11 10 18</span>
             </a>
             <Link 
               to="/contact" 
