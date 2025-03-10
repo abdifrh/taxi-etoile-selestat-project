@@ -137,7 +137,7 @@ const Footer = () => {
             <Link to="/terms" className="hover:text-white transition-colors">Mentions légales</Link>
           </div>
         </div>
-        <p className="mt-1 text-sm">
+        <p className="mt-1 text-xs text-gray-400">
               Site développé par <a 
                 href="https://afh-agency.com/" 
                 target="_blank" 
